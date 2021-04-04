@@ -41,6 +41,21 @@ uint8_t manual_feed_mode(uint8_t manual_feed,uint8_t s)
 	return 0;
 }
 
-void error()	//异常处理，这里占个位，但是不写
+void voice_feed(uint8_t s)
 {
+	uint8_t i,j;
+	if(s==1)	//开始喂食响3下
+		j = 3;
+	else 			//结束喂食响5下
+		j = 5;
+	for(i=0;i<j;i++)
+	{
+		BEEP_ON;
+		HAL_Delay(200);
+		BEEP_OFF;
+		HAL_Delay(200);
+	}
 }
+//void error()	//异常处理，这里占个位，但是不写
+//{
+//}

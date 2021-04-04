@@ -104,7 +104,6 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim3);		//开定时器中断3
 	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);		//打开PWM通道
 	wifi_protocol_init();
-	mcu_set_wifi_mode(0);
   /* USER CODE END 2 */
 
   /* Infinite loop */

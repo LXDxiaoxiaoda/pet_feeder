@@ -176,14 +176,15 @@ static unsigned char dp_download_quick_feed_handle(const unsigned char value[], 
     
     quick_feed = mcu_get_dp_download_bool(value,length);
     if(quick_feed == 0) {
-			
-			quick_feed_mode(0,quick_feed);
 			f = done;
 			mcu_dp_enum_update(DPID_FEED_STATE,f); //枚举型数据上报;
+			voice_feed(0);
+			quick_feed_mode(0,quick_feed);
         //开关关
     }else {
 			f = feeding;	//喂食状态为快速喂食
 			mcu_dp_enum_update(DPID_FEED_STATE,f); //枚举型数据上报;
+			voice_feed(1);
 			mcu_get_green_time();
 			quick_feed_mode(60,quick_feed);	//基本好了，到时候再慢慢调一下角度
         //开关开
@@ -217,11 +218,13 @@ static unsigned char dp_download_manual_feed_handle(const unsigned char value[],
     */
 	f = feeding;	//喂食状态为手动喂食
 	mcu_dp_enum_update(DPID_FEED_STATE,f); //枚举型数据上报;
+	voice_feed(1);
 	mcu_get_green_time();
     manual_feed_mode(manual_feed,1);	//开
 		manual_feed_mode(manual_feed,0);	//关
 	f = done;
 	mcu_dp_enum_update(DPID_FEED_STATE,f); //枚举型数据上报;
+	voice_feed(0);
     //处理完DP数据后应有反馈
     ret = mcu_dp_value_update(DPID_MANUAL_FEED,manual_feed);
     if(ret == SUCCESS)
@@ -246,8 +249,8 @@ static unsigned char dp_download_light_handle(const unsigned char value[], unsig
     
     light = mcu_get_dp_download_bool(value,length);
     if(light == 0) {
-			l = 0;
 			Both_LED_OFF;
+			l = 0;
         //开关关
     }else {
 			l = 1;

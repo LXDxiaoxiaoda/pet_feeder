@@ -1,7 +1,7 @@
 Dependencies for Project 'Hello_Kiti', Target 'Hello_Kiti': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
 F (startup_stm32f103xb.s)(0x605EED55)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o hello_kiti\startup_stm32f103xb.o --depend hello_kiti\startup_stm32f103xb.d)
-F (.\hardware.c)(0x60608BE6)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\hardware.o --omf_browse hello_kiti\hardware.crf --depend hello_kiti\hardware.d)
+F (.\hardware.c)(0x6069264F)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\hardware.o --omf_browse hello_kiti\hardware.crf --depend hello_kiti\hardware.d)
 I (../Inc/main.h)(0x60628CC9)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9D8942)
 I (../Inc/stm32f1xx_hal_conf.h)(0x605EED52)
@@ -35,8 +35,8 @@ I (../Inc/tim.h)(0x6060815D)
 I (../Inc/usart.h)(0x605EED50)
 I (..\mcu_sdk\mcu_api.h)(0x6054B136)
 I (..\mcu_sdk\protocol.h)(0x606289E1)
-I (hardware.h)(0x606080FD)
-F (../Src/main.c)(0x60628CD3)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\main.o --omf_browse hello_kiti\main.crf --depend hello_kiti\main.d)
+I (hardware.h)(0x6069275C)
+F (../Src/main.c)(0x60691D9F)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\main.o --omf_browse hello_kiti\main.crf --depend hello_kiti\main.d)
 I (../Inc/main.h)(0x60628CC9)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9D8942)
 I (../Inc/stm32f1xx_hal_conf.h)(0x605EED52)
@@ -690,7 +690,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9D8942)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9D8942)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9D8942)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5F9D8942)
-F (..\mcu_sdk\protocol.c)(0x606291EB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\protocol.o --omf_browse hello_kiti\protocol.crf --depend hello_kiti\protocol.d)
+F (..\mcu_sdk\protocol.c)(0x606926D5)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\protocol.o --omf_browse hello_kiti\protocol.crf --depend hello_kiti\protocol.d)
 I (..\mcu_sdk\wifi.h)(0x6054BD40)
 I (G:\keil5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (G:\keil5\ARM\ARMCC\include\string.h)(0x5EC77604)
@@ -728,7 +728,7 @@ I (../Inc/usart.h)(0x605EED50)
 I (../Inc/main.h)(0x60628CC9)
 I (../Inc/gpio.h)(0x605EED50)
 I (../Inc/tim.h)(0x6060815D)
-I (..\MDK-ARM\hardware.h)(0x606080FD)
+I (..\MDK-ARM\hardware.h)(0x6069275C)
 F (..\mcu_sdk\system.c)(0x6054B136)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\mcu_sdk -I ..\MDK-ARM-I.\RTE\_Hello_Kiti-IG:\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IG:\keil5\Keil\STM32F1xx_DFP\1.0.5\Device\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o hello_kiti\system.o --omf_browse hello_kiti\system.crf --depend hello_kiti\system.d)
 I (..\mcu_sdk\wifi.h)(0x6054BD40)
 I (G:\keil5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)

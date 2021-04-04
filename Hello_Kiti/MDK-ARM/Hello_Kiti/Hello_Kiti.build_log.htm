@@ -27,7 +27,16 @@ Project File Date:  03/27/2021
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\keil5\ARM\ARMCC\Bin'
 Build target 'Hello_Kiti'
-"Hello_Kiti\Hello_Kiti.axf" - 0 Error(s), 0 Warning(s).
+compiling hardware.c...
+hardware.c(24): warning:  #111-D: statement is unreachable
+        return 0;
+hardware.c: 1 warning, 0 errors
+compiling main.c...
+compiling protocol.c...
+linking...
+Program Size: Code=8680 RO-data=300 RW-data=44 ZI-data=1276  
+FromELF: creating hex file...
+"Hello_Kiti\Hello_Kiti.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +59,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
